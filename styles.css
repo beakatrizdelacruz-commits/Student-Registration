@@ -1,0 +1,213 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #f5eee6;
+    color: #493629;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fffdf9;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(91, 62, 43, 0.12);
+}
+
+h2 {
+    color: #6f4932;
+    margin: 0 0 25px;
+}
+
+#studentForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    flex: 1;
+    min-width: 140px;
+    padding: 11px 12px;
+    border: 1px solid #b89a7d;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fffdf9;
+    color: #493629;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #d6b89b;
+    border-color: #79543a;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #79543a;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(0.90);
+}
+
+#submitBtn {
+    background: #79543a;
+}
+
+.edit-btn {
+    background: #8b6948;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: #a0523e;
+}
+
+.cancel-btn {
+    background: #9b806a;
+}
+
+#message {
+    min-height: 20px;
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: #79543a;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #b89a7d;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+    background: #ead8c5;
+    border: 1px solid #a78364;
+}
+
+thead {
+    background: #6f4932;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 13px 12px;
+    text-align: left;
+    border: 1px solid #b89a7d;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+th {
+    background: #6f4932;
+    color: #ffffff;
+}
+
+td {
+    background: #ead8c5;
+    color: #493629;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 18%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 36%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 17%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 29%;
+}
+
+tbody tr:hover td {
+    background: #ddc3a9;
+}
+
+td button {
+    margin-bottom: 3px;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #9a8777;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 15px 8px;
+    }
+
+    .container {
+        padding: 18px 12px;
+    }
+
+    #studentForm {
+        flex-direction: column;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 20%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 32%;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+        width: 18%;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+        width: 30%;
+    }
+
+    button {
+        padding: 9px 10px;
+    }
+}
